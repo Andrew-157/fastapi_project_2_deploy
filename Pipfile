@@ -8,7 +8,6 @@ fastapi = "*"
 sqlmodel = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 python-decouple = "*"
-psycopg2 = "*"
 alembic = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 passlib = {extras = ["bcrypt"], version = "*"}
@@ -16,6 +15,7 @@ python-multipart = "*"
 email-validator = "*"
 httpx = "*"
 pytest = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 autopep8 = "*"
