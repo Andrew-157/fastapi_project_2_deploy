@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+sqlmodel = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+python-decouple = "*"
+psycopg2 = "*"
+alembic = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
+passlib = {extras = ["bcrypt"], version = "*"}
+python-multipart = "*"
+email-validator = "*"
+httpx = "*"
+pytest = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.10"
