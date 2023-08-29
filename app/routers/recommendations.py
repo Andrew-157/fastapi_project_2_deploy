@@ -18,7 +18,7 @@ router = APIRouter(
 def save_tags(session: Session, tags: [str]) -> list[Tag]:
     tag_objects = []
     for tag in tags:
-        tag: str = tag.strip().replace(' ', '-')
+        tag: str = tag.strip().replace(' ', '-').lower()
         existing_tag = session.exec(
             select(Tag).where(Tag.name == tag)).first()
         if existing_tag:
